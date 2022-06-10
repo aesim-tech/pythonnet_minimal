@@ -18,16 +18,16 @@ namespace api
 
         public bool CanEncode(Type type)
         {
-            return type.IsEnum;
+            return type == typeof(Colors);
         }
 
         public PyObject? TryEncode(object value)
         {
             if (value == null) return null;
 
-            if (value is Colors en)
+            if (value is Colors color)
             {
-                string? name = Enum.GetName(typeof(Colors), en);
+                string? name = Enum.GetName(typeof(Colors), color);
                 if (name == null) return null;
                 return new PyString(name);
             }
