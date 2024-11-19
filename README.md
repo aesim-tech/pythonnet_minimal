@@ -1,7 +1,7 @@
 # pythonnet_minimal
-Simple demo of Pythonnet using .Net6.0
+Simple demo of Pythonnet using .Net9.0
 
-Requires .Net6.0 and pythonnet version: https://pypi.org/project/pythonnet/3.0.0a2/
+Requires .Net9.0 and pythonnet : https://pypi.org/project/pythonnet/
 
 ## How to use? 
 `dotnet build`

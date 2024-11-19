@@ -1,6 +1,6 @@
 # Set runtime config files
 import pythonnet, clr_loader, os
-bin_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin','Debug','net6.0')
+bin_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin','Debug','net9.0')
 runtime_config_path = os.path.join(bin_folder,'pythonnet_minimal.runtimeconfig.json')
 pythonnet.set_runtime(clr_loader.get_coreclr(runtime_config=runtime_config_path))
 
